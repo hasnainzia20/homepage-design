@@ -722,6 +722,8 @@ padding: 1em;
 }
 .facts-right iframe {
     border-radius: 1.2em;
+    width: 440px;
+    height: 350px;
 }
 .video {
     padding: 9em 0;   
