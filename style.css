@@ -1,0 +1,849 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/meetings-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* topnav-starts ************************************************************/
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 7.28em 0.7em 7.28em;
+    background:rgb(31, 39, 43);
+    color: white;
+}
+.top-nav-p {
+    align-content: center;
+}
+.top-nav-p p{
+font-size: 0.813rem;
+outline: none;
+}
+.top-nav-p span {
+    color: rgb(245, 164, 37);
+}
+.social-link {
+    align-content: center;
+}
+.social-link-list{
+    display: flex;
+}
+.social-link-list li {
+    list-style: none;
+    padding: 0.15em 0 0 1.59em;
+    font-size: 0.8em;
+    align-items: center;
+}
+.social-link-list a {
+    color: white;
+    padding: 0;
+}
+
+/* topnav-Ends **********************************************************/
+
+
+/* navbar-starts ********************************************************/
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6em 7.2em 1.6em 7.2em;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    align-content: center;
+}
+.brand {
+    text-transform: uppercase;
+}
+.brand a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+}
+/* .hamburger {
+    display: none;
+} */
+input[type=checkbox], .hamburger{
+    display: none;
+} 
+.nav-links ul {
+    display: flex;
+}
+.nav-links {
+    align-content: center;
+    margin: auto 0;
+
+}
+
+.nav-links li {
+    list-style: none;
+    /* padding-left: 1.65em; */
+}
+.nav-links a {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    white-space: nowrap;
+    padding-left: 1.85em;
+    transition: color 0.3s ease-in-out;
+}
+.nav-links a:hover {
+    color: rgb(245, 164, 37);
+}
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    /* padding-left: 1.65em; */
+    cursor: pointer;
+}
+.dropbtn a {
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+}
+.dropbtn i {
+    font-size: 0.7em;
+    color: white;
+    transition: color margin 0.3s ease-in;
+}
+.dropbtn:hover {
+    color: rgb(245, 164, 37);
+}
+.dropdown-content {
+    display: none;
+    transition: 5s ease;
+
+}
+.dropdown:hover > .dropdown-content {
+    display: block;
+    position: absolute;
+    background: white;
+    color: black;
+    left: 15px;
+    padding: 0.3em;
+    width: 12em;
+}
+.dropdown:hover > .dropdown-content :first-child {
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+}
+
+  
+div.dropdown-content {
+    animation: 0.2s slide-up;
+    margin-top: 0%;
+  }
+  
+@keyframes slide-up {
+    from {
+      margin-top: 20%;
+      height: 220%;
+    }
+    
+    to {
+      margin-top: 0%;
+      height: 240%;
+    }
+}
+
+#dropdown-content-tags{
+    color: black;
+    font-size: 0.8rem;
+    margin: 40px 0;
+    font-weight: 300;
+    padding-top: 1em;
+    transition: margin-left 0.3s ease-in-out;
+}
+#dropdown-content-tags:hover {
+    color: rgb(245, 164, 37);
+    margin-left: 0.12em;
+}
+
+
+
+/* hero section starts ********************************************************************/
+.hero {
+    padding-bottom: 2.5em;
+}
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: contrast(30%);
+    filter: brightness(29%);
+
+}
+.hero-content {
+    justify-content: start;
+    width: 37em;
+    margin: 6.5em 7.2em;
+    color: white;
+}
+.hero-content h6 {
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    line-height: 0.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1.4em;
+}
+.hero-content h1 {
+    font-size: 2.27rem;
+    letter-spacing: 0.029em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 0.4em;
+}
+.hero-content p {
+    font-size: 0.89rem;
+    line-height: 1.75em;
+    margin-bottom: 2em;
+    letter-spacing: normal;
+}
+.hero-content a {
+    color: #3CF;
+    text-decoration: none;
+
+}
+
+.hero-content a:hover {
+    color: rgb(245, 164, 37);
+}
+
+.hero-content button {
+    color: white;
+    background-color:rgb(161, 44, 47);
+    border: none;
+    text-transform: uppercase;
+    padding: 1.22em 2.49em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    border-radius: 2.9em;
+}
+/* hero section ends ********************************************************************/
+
+
+
+/* upcoming meetings start**************************************************/
+
+.upcoming-meetings {
+    background-attachment: fixed;
+    padding-bottom: 4em;
+    
+}
+
+
+
+.upcoming-meetings-slider .slider {
+    margin: -90px 60px 40px 60px;
+    text-align: center;
+}
+.multiple-items .slick-slide {
+    padding: 0 0;
+    margin: 0 25px;
+    background-image: url(images/service-item-bg.jpg);
+    justify-content: center;
+    border-radius: 1.3em;
+    padding: 2em 2em;
+    margin-bottom: 3em;
+}
+.upcoming-meeting-slide .slick-slide {
+    padding: 0;
+    width: 10em;
+}
+
+
+.multiple-items .slick-prev,
+.multiple-items .slick-next {
+    margin-top: -40px;
+    color: white;
+}
+
+.multiple-items .slick-prev:hover ,
+.multiple-items .slick-next:hover {
+    /* background: #000; */
+    color: white;
+}
+.multiple-items .slick-slide img {
+    margin: 1em auto;
+    width: 3.8em;
+    height: auto;
+}
+.upcoming-meeting-slide h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* letter-spacing: -1px; */
+    color: white;
+    margin-bottom: 1em;
+}
+.upcoming-meeting-slide p {
+    font-size: 0.8rem;
+    line-height: 1.8em;
+    color: white;
+    font-weight: 300;
+}
+.meetings {
+    margin: 1.2em 7.2em 1.2em 7.2em;
+    
+}
+.meeting-cards {
+    display: flex;
+    justify-content: space-around;
+}
+.meeting-heading {
+    display: flex;
+    justify-content: center;
+}
+.meeting-heading h1 {
+color: white;
+font-size: 1.4rem;
+text-transform: uppercase;
+margin-bottom: 2em;
+}
+.meeting-heading-hr {
+    margin-bottom: 4em;
+    color: rgba(128, 128, 128, 0.219);
+    border-top: 0.01em solid rgba(128, 128, 128, 0.26);
+    border-bottom: none;
+}
+/* meeting categories start */
+
+.meeting-categories {
+    display: inline;
+    background: white;
+    text-align: left;
+    border-radius: 1.4em;
+    padding: 50px;
+    max-height: 27rem;
+}
+.meeting-categories-heading h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f272b;
+    margin-bottom: 1.2em;
+}
+
+.categories ul {
+    background-color: #fff;
+    border-radius: 20px;
+    /* padding: 40px; */
+    margin-right: 45px;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+.categories li {
+    list-style: none;
+    line-height: 2.5em;
+}
+.categories li a {
+    font-size: 	0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin: 2em 0 1em 0;
+    line-height: 2em;
+
+}
+.categories li a:hover {
+    color: rgb(161, 44, 47);
+}
+
+.meeting-categories-button button{
+    border: none;
+    border-radius: 1.5em;
+    text-transform: uppercase;
+    background: rgb(161, 44, 47);
+    padding: 0.7em 3.2em;
+    margin-top: 1.2em;
+}
+
+.meeting-categories-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.6rem;
+}
+
+
+.lectures .grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.lecture-cards {
+    margin-left: 1.2em;
+    margin-bottom: 1.5em;
+    position: relative;
+    border-radius: 1em;
+}
+.lecture-cards .price {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 0.5em;
+    margin: 1em;
+}
+.lecture-cards .price h2 {
+    font-size: 0.7em;
+    font-weight: 500;
+    padding: 0.4em 0.6em;
+}
+.lecture-card-content {
+    background: white;
+    border-radius: 0 0 1em 1em;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.8em 0; 
+}
+.meeting-date {
+    margin: 0 10px;
+    padding: 0.5em 1em;
+}
+.month {
+    font-size: 0.6em;
+    font-weight: 600;
+    color: rgb(161, 44, 47);
+}
+.day {
+    font-weight: 600;
+}
+.grid-item{
+    width: 350px;
+    border-radius: 1.2em;
+}
+
+.lecture-card-img img {
+    width: 350px;
+    display: block;
+    border-radius:  1em 1em 0 0 ;
+}
+
+.lecture-heading a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500; 
+    white-space: nowrap;
+    margin-bottom: 2.5em;   
+}
+.lecture-heading p {
+    font-size: 0.7rem;
+    line-height: 2.2em;
+    width: 70%;
+}
+/* upcoming meetings end ****************************************************************/
+
+
+/* apply for starts ********************************************************************************/
+
+.apply-for {
+    background-image: url(images/apply-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 9em 7.2em ;
+}
+
+.apply-for-wrapper {
+    margin-top: 0.5em;
+    padding: 3em 0;
+}
+.apply-for-degree {
+    width: 600px;
+    /* margin: 3em; */
+    background: rgba(255, 255, 255, 0.13);
+    color: white;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+.apply-for-degree h1 {
+    font: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.apply-for-degree p {
+    font-size: 0.85em;
+    font-weight: 300;
+    line-height: 1.7em;
+    margin-bottom: 2em;
+}
+.apply-for-degree a {
+    text-decoration: none;
+    color: white;
+    background: rgb(161, 44, 47);
+    font-weight: 100;
+    border-radius: 1.4rem;
+    font-size: 0.9rem;
+    padding: 1em 1.4em;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+.apply-for-wrapper > :nth-child(2) a {
+    text-decoration: none;
+    color: white;
+    background: rgb(245, 164, 37);
+    font-weight: 100;
+    border-radius: 1.4rem;
+    font-size: 0.9rem;
+    padding: 1em 1.4em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.collapsible {
+    background: white;
+    max-width: 600px;
+    /* max-height: 400px; */
+    padding: 2.5em;
+
+}
+.collapsible details {
+    /* border-bottom: 1px solid rgb(103, 100, 100); */
+    list-style: none;
+    position: relative;
+    margin-bottom:  3.5em;
+}
+.collapsible details:focus {
+    color: rgb(245, 164, 37);
+}
+.collapsible details span {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.collapsible details span:focus {
+    display: none;
+    color: rgb(245, 164, 37);
+}
+.collapsible details span i:focus {
+    display: none;
+}
+.collapsible details > summary {
+    white-space: nowrap;
+    list-style: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    /* background: red; */
+
+}
+.collapsible details > summary:focus{
+    color: rgb(245, 164, 37);
+
+}
+.collapsible details > summary::-webkit-details-marker {
+    display: none;
+}
+.collapsible details p {
+  max-width: fit-content;
+  font-size: 0.8em;
+}
+.collapsible {
+  border-radius: 10px;
+}
+/* Collapsible end ********************************************************************/
+
+
+/* popular courses start ***************************************************************/
+
+.popular-courses {
+    background-image: url(images/meetings-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4em 0;
+    margin: 0;
+}
+
+
+
+.popular-courses-slider .slider {
+    margin: 0 110px 40px 110px;
+    text-align: center;
+}
+.popular-courses-slider .slick-prev,
+.popular-courses-slider .slick-next {
+    margin-top: -40px;
+}
+.popular-course-heading {
+    margin: 0 7.2em;
+    padding: 4em 0;
+}
+.popular-course-heading h1 {
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1.2em;
+}
+.popular-course-heading hr {
+    background-color: rgb(51, 50, 50);
+}
+.popular-courses-slider .slick-slide {
+    /* padding: 0 50px; */
+    margin: 0 0.5em; 
+    justify-content: center;
+    /* padding: 2em ; */
+    margin-bottom: 3em;
+
+}
+.popular-courses-slider .slick-prev {
+    padding: 1em;
+}
+.course-slide {
+    margin: 10px;
+    background: white;
+}
+.course-slide img {
+    width: 100%;
+    height: auto;
+}
+.course-slide-content p{
+font-size: 0.9rem;
+font-weight: 500;
+padding: 1em;
+}
+.rating-price {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.ratings {
+    margin: auto 0;
+    padding: 1em;
+
+    /* margin-left: 1em; */
+    /* margin-top: 0.8em; */
+} 
+.fa-star {
+    font-size: 0.7rem;
+}
+.rating-price .price {
+    color: rgb(161, 44, 47);
+}
+.checked {
+    color: orange;
+}
+
+
+/* popular courses end ******************************************************************/
+
+
+/* facts-start **************************************************************************/
+
+.facts {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 9em;
+    background-image: url(images/facts-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.facts-left-heading {
+    font-size: 1.7em;
+    color: white;
+}
+.facts-left .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+    padding: 4em;
+}
+.count-1 {
+    display: inline;
+    font-size: 1.8em;
+    font-weight: 800;
+    color: rgb(245, 164, 37);
+}
+.facts-left .grid-item {
+    width: 200px;
+    padding: 1em;
+    text-align: center;
+    background: rgba(128, 128, 128, 0.288);
+}
+.item-1 {
+    margin: 0.7em ;
+    padding-bottom: 0;
+}
+.item-2 {
+    margin-top: 1.5em;
+}
+.item-3 {
+    margin-top: 0.7em;
+    padding-bottom: 0;
+}
+.item-4 {
+    margin-top: 1.5em;
+}
+.facts-left-card-content span {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: rgb(245, 164, 37);
+}
+.facts-left-card-content p {
+    color: white;
+    white-space: nowrap;
+}
+
+.facts-right {
+    justify-content: center;
+    align-content: center;
+    padding: 4em;
+}
+.facts-right iframe {
+    border-radius: 1.2em;
+}
+.video {
+    padding: 9em 0;   
+    background-image: url(images/video-item-bg.jpg);
+    background-size: cover;
+    width: 450px;
+    height: auto;
+    border-radius: 1.2em;
+    text-align: center;
+}
+.fa-play-circle {
+    font-size: 2.2em;
+    color: white;
+}
+/* facts end ****************************************************************************/
+
+/* contact-us start *********************************************************************/
+.contact-us {
+    background-image: url(images/meetings-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-us-content {
+    display: flex;
+    margin: 0 7.2em;
+    padding: 9em 0;
+}
+.contact-us-left {
+    background: white;
+    border-radius: 1.2em;
+    padding: 1.8em 2em;
+    margin: 0 2em 0 0;
+    max-height: 400px;
+}
+
+.contact-form input {
+    border: none;
+    background: rgba(212, 210, 210, 0.2);
+    padding: 0.8em;
+    border-radius: 1.2em;
+    margin-top: 1em;
+    width: 32.5%;
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+    padding-left: 1em;
+    font-weight: 500;
+}
+.contact-form input::placeholder {
+    font-size: 0.9em;
+    padding-left: 1em;
+    font-weight: 600;
+}
+.contact-form input:focus {
+    outline: none;
+}
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 1.2em;
+    background: rgba(212, 210, 210, 0.2);
+    padding: 1em;
+}
+.contact-form textarea::placeholder {
+    font-size: 1.06em;
+    /* padding-left: 1em; */
+    font-weight: 600;
+    outline: none;
+}
+.contact-form textarea:focus {
+    outline: none;
+}
+.contact-form input[type="submit"] {
+    width: 25%;
+    background: rgb(161, 44, 47);
+    color: white;
+    font-size: 0.65rem;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+.contact-us-heading h1 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+.contact-us-right {
+    background-image: url(images/service-item-bg.jpg);
+    border-radius: 1.2em;
+    padding: 2em 1em;
+    min-height: 450px;
+    margin-top: -1em;
+}
+.contact-right-content {
+    padding: 1em;
+    text-align: left;
+    line-height: 2.2em;
+}
+.contact-right-content h4 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+    margin: 0.2em 8em 0 0;
+}
+/* .contact-right-content span */
+.contact-right-content  span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 0.4em;;
+    border-bottom: 1px solid rgb(172, 167, 167);
+}
+.contact-right-content >:nth-child(4) span {
+    border-bottom: none;
+}
+.footer {
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+    padding: 4em;
+}
+/* contact-us end ***********************************************************************/
+
+
+
